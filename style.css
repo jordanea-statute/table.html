@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'timesnews ', sans-serif;
+    font-size: 11pt;
+} 
+
+table, tr, th ,td{
+    border: 1px solid #000;
+    border-spacing: 0; /*tira o espaço entre a bordas e as celulas*/
+
+}
+
