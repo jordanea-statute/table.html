@@ -78,6 +78,10 @@ tfoot td:nth-child(2) {
 
 button {
     padding: 10px 15px;
-    margin: 15px
+    margin: 15px;
+    border: none;
+    background-color: #6096B4 ;
+  
+    
 }
 
