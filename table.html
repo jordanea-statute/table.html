@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" id="linkEstilos">
+
 </head>
 <body>
     <table> <!-- Inicio da tabela -->
@@ -110,5 +111,30 @@
         </tfoot>
 
     </table>
+
+    <button type="button" id="botao"> Remover estilos </button>
+
+    <script>
+        function toggleEstilos(){
+            const linkEstilos = document.querySelector('#linkEstilos');
+            //toggle siginifica alterna
+            if(linkEstilos.hasAttribute('disabled')){
+                linkEstilos.removeAttribute('disabled');
+                botao.innerHTML = 'Remover estilos';
+           
+            } else {
+                linkEstilos.setAttribute('disabled','');/*setAttribute define nome e valor do atributo*/
+                botao.innerHTML = 'Aplicar Estilos';
+                
+            }
+
+        }
+
+        // document.querySelector('#botao') da para usar as duas opçoes (querySelector que usa o # ou getElementById),uma ou outra. 
+       const botao = document.querySelector('#botao');
+       botao.addEventListener('click', toggleEstilos);
+   
+        
+    </script>
 </body>
 </html>

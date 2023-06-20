@@ -1,14 +1,83 @@
+ 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
-    font-family: 'timesnews ', sans-serif;
+    box-sizing: content-box; /*para os elementos do formulario ficarem baseados no mesmo tamanho*/
+    font-family: 'times new roman';
     font-size: 11pt;
 } 
 
-table, tr, th ,td{
-    border: 1px solid #000;
-    border-spacing: 0; /*tira o espaço entre a bordas e as celulas*/
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+/*h1 {
+    margin-bottom: 3rem;
+    font-size: 20pt;
+}*/
+
+table {
+    border-radius: 20px;
+    border-spacing: 0; /*tira o espaço entre a bordas e as celulas*/
+    border-collapse: collapse; /*nao permite que apareça uma borda entre uma coluna e outra*/
+    box-shadow: 20px 20px 20px #BDCDD6; /*deixa uma sombra */
+    
+}
+
+caption {
+    font-size: 12pt;
+    caption-side: bottom; /*deixa o caption embaixo*/
+    margin-top: 20px;
+}
+
+tbody > tr:nth-child(odd) { /* odd  significa par, nth serve para se referir a um filho especifico daquele elemento*/
+    background-color: #6096B4;
+}
+
+tbody > tr:nth-child(even), thead>tr, tfoot>tr { /* even significa impar*/
+    background-color: #93BFCF;
+}
+
+td , th {
+    padding: 15px 20px;
+    
+}
+
+thead > tr {
+    border-bottom: 4px solid #ddd;
+}
+
+thead th {
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+tbody td {
+    font-size: 11pt;
+}
+
+tfoot > tr {
+    border-top: 4px solid #ddd;
+}
+
+tfoot td:nth-child(1) {
+    font-weight: 600;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+tfoot td:nth-child(2) {
+    font-weight: 600;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 15px
 }
 
