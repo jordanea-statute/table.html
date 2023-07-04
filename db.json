@@ -1,1 +1,14 @@
-const = 
+{
+    "produtos": [
+        {
+            "id": 1,
+            "descrição": "Sapato",
+            "preco": "19,90"
+        },
+        {
+            "id": 2,
+            "descrição": "Sandalia",
+            "preco": "29,90"
+        }
+    ]
+}
